@@ -24,19 +24,11 @@ header("Content-Type: application/json");
 $response = '';
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
-	$response = "Ciao $firstname, benvenuto!";
-}
-elseif($text=="domanda 1")
-{
-	$response = "risposta 1";
-}
-elseif($text=="domanda 2")
-{
-	$response = "risposta 2";
+	$response = "Ciao $firstname";
 }
 else
 {
-	$response = "Comando non valido!";
+	$response = "Urca";
 }
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
