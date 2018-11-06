@@ -34,13 +34,13 @@ elseif($text=="come stai?")
 {
 	$response = "Bene dai";
 }
-elseif($text=="domanda1")
+elseif($text=="che si dice?")
 {
-	$response = "risposta1";
+	$response = "Un po' stanco...";
 }
-elseif($text=="domanda2")
+elseif($text=="novità?")
 {
-	$response = "risposta2";
+	$response = "Mah, niente di che...";
 }
 elseif($text=="domanda3")
 {
