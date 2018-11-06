@@ -17,7 +17,7 @@ $date = isset($message['date']) ? $message['date'] : "";
 $text = isset($message['text']) ? $message['text'] : "";
 
 $text = trim($text);
-//$text = strtolower($text);
+$text = strtolower($text);
 
 header("Content-Type: application/json");
 
@@ -25,6 +25,46 @@ $response = '';
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
 	$response = "Ciao $firstname";
+}
+elseif($text=="come va?")
+{
+	$response = "Non c'è male";
+}
+elseif($text=="come stai?")
+{
+	$response = "Bene dai";
+}
+elseif($text=="domanda1")
+{
+	$response = "risposta1";
+}
+elseif($text=="domanda2")
+{
+	$response = "risposta2";
+}
+elseif($text=="domanda3")
+{
+	$response = "risposta3";
+}
+elseif($text=="domanda4")
+{
+	$response = "risposta4";
+}
+elseif($text=="domanda5")
+{
+	$response = "risposta5";
+}
+elseif($text=="domanda6")
+{
+	$response = "risposta6";
+}
+elseif($text=="domanda7")
+{
+	$response = "risposta7";
+}
+elseif($text=="domanda8")
+{
+	$response = "risposta8";
 }
 else
 {
